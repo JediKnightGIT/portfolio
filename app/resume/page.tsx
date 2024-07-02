@@ -23,28 +23,16 @@ const about = {
       fieldValue: '3+ years',
     },
     {
-      fieldName: 'Email',
-      fieldValue: 'jediknightru@gmail.com',
-    },
-    {
       fieldName: 'Languages',
       fieldValue: 'Russian, English',
     },
     {
-      fieldName: 'Name',
-      fieldValue: 'Jedi',
+      fieldName: 'Teamwork experience',
+      fieldValue: 'Available',
     },
     {
-      fieldName: 'Name',
-      fieldValue: 'Jedi',
-    },
-    {
-      fieldName: 'Name',
-      fieldValue: 'Jedi',
-    },
-    {
-      fieldName: 'Name',
-      fieldValue: 'Jedi',
+      fieldName: 'Email',
+      fieldValue: 'jediknightru@gmail.com',
     },
   ],
 };
@@ -54,11 +42,11 @@ const experience = {
   icon: '/resume/badge.svg',
   title: 'My experience',
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit quibusdam nam reiciendis maxime illum.',
+    'The places of work in which I gained experience as a software engineer.',
   items: [
     {
       company: 'TopDom Ltd',
-      position: 'Frontend Developer',
+      position: 'Front-end Developer',
       duration: '2021 - Present',
     },
     {
@@ -74,17 +62,17 @@ const education = {
   icon: '/resume/cap.svg',
   title: 'My education',
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit quibusdam nam reiciendis maxime illum.',
+    'The list of educational institutions I attended.',
   items: [
     {
-      institution: 'ФГБОУ ВО «КНИТУ»',
-      degree: 'Higher education',
+      institution: 'ФГБОУ ВО «КНИТУ». Bachelor\'s degree',
+      degree: 'Information systems and technologies',
       duration: '2018 - 2022',
     },
     {
-      institution: 'ГАПОУ "МЦК-КТИТС"',
-      degree: 'Specialized secondary education',
-      duration: '2014-2018',
+      institution: 'ГАПОУ "МЦК-КТИТС". Associate degree',
+      degree: 'Programming in computer systems',
+      duration: '2014 - 2018',
     },
   ],
 };
@@ -93,7 +81,7 @@ const education = {
 const skills = {
   title: 'My skills',
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit quibusdam nam reiciendis maxime illum.',
+    'The list of technologies and tools I possess.',
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -225,8 +213,10 @@ const Resume: React.FC = () => {
                       <li key={idx}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group'>
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">{item.icon}</div>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {item.icon}
+                              </div>
                             </TooltipTrigger>
                             <TooltipContent>
                               <p>{item.name}</p>
@@ -239,9 +229,25 @@ const Resume: React.FC = () => {
                 </ul>
               </div>
             </TabsContent>
+
             {/* about */}
-            <TabsContent value="about" className="w-full">
-              About me
+            <TabsContent value="about" className="w-full text-center xl:text-left">
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                {/* <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p> */}
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item, idx) => {
+                    return (
+                      <li
+                        className="flex items-center justify-center xl:jusitfy-start gap-4"
+                        key={idx}>
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
