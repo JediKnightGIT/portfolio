@@ -6,6 +6,7 @@ import Photo from '@/components/Photo';
 import Stats from '@/components/Stats';
 
 const Home = () => {
+
   return (
     <section className="h-full">
       <div className="container h-full">

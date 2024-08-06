@@ -9,7 +9,7 @@ import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import Link from 'next/link';
 import Image from 'next/image';
-import WorkSliderButtons from '@/components/WorkSliderButtons';
+import WorkSliderButtons from '../../../components/WorkSliderButtons';
 import { Swiper as SwiperType } from 'swiper/types';
 
 const projects = [
