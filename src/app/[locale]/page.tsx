@@ -4,8 +4,10 @@ import { FiDownload } from 'react-icons/fi';
 import Socials from '@/components/Socials';
 import Photo from '@/components/Photo';
 import Stats from '@/components/Stats';
+import { useTranslations } from 'next-intl';
 
 const Home = () => {
+  const t = useTranslations("HomePage")
 
   return (
     <section className="h-full">
@@ -13,9 +15,9 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Front-end Developer</span>
+            <span className="text-xl">{t("position")}</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Jedi</span>
+              {t("hello")} <br /> <span className="text-accent">{t("name")}</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white">
               I focus at crafting elegant digital experiences and I am proficient in various
@@ -25,7 +27,7 @@ const Home = () => {
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <span>Download resume</span>
+                <span>{t("resume")}</span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">

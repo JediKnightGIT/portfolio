@@ -1,1 +1,13 @@
-{}
+{
+  "HomePage": {
+    "position": "Front-end Developer",
+    "hello": "Hello I'm",
+    "name": "Name",
+    "resume": "Download resume"
+  },
+  "Stats": {
+    "exp": "Years of experience",
+    "projects": "Projects completed",
+    "tech": "Technologies mastered"
+  }
+}
