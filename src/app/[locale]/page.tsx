@@ -17,11 +17,10 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">{t("position")}</span>
             <h1 className="h1 mb-6">
-              {t("hello")} <br /> <span className="text-accent">{t("name")}</span>
+              <span className="text-accent">{t("name")}</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white">
-              I focus at crafting elegant digital experiences and I am proficient in various
-              frontend technologies.
+              {t("desc")}
             </p>
 
             {/* btn and socials */}

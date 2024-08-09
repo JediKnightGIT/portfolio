@@ -1,13 +1,62 @@
 {
   "HomePage": {
     "position": "Front-end Developer",
-    "hello": "Hello I'm",
     "name": "Name",
+    "desc": "I focus at crafting elegant digital experiences that look good and built well under the hood.",
     "resume": "Download resume"
   },
   "Stats": {
     "exp": "Years of experience",
     "projects": "Projects completed",
     "tech": "Technologies mastered"
+  },
+  "About": {
+    "title": "About me",
+    "list": {
+      "name": {
+        "title": "Name",
+        "value": "Name"
+      },
+      "experience": {
+        "title": "Experience",
+        "value": "3 years"
+      },
+      "languages": {
+        "title": "Languages",
+        "value": "Russian, English"
+      },
+      "teamwork": {
+        "title": "Teamwork experience",
+        "value": "Available"
+      }
+    }
+  },
+  "Experience": {
+    "title": "My experience",
+    "list": {
+      "1": {
+        "company": "TopDom Ltd",
+        "position": "Front-end Developer",
+        "duration": "2021 - Present"
+      },
+      "2": {
+        "company": "Freelance",
+        "position": "Web Developer",
+        "duration": "2020"
+      }
+    }
+  },
+  "Education": {
+    "title": "My education",
+    "list": {
+      "1": {
+        "institution": "Kazan National Research Technological University. Bachelor's degree",
+        "degree": "Information systems and technologies"
+      },
+      "2": {
+        "institution": "Kazan College of Information Technologies and Communications. Associate degree",
+        "degree": "Programming in computer systems"
+      }
+    }
   }
 }

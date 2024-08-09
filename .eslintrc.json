@@ -6,6 +6,25 @@
     "quotes": [0],
     "avoidEscape": 0,
     "allowTemplateLiterals": 0,
-    "no-useless-escape": 0
+    "no-useless-escape": 0,
+    "prefer-const": ["error"],
+    "no-restricted-imports": [
+      "error",
+      {
+        "name": "next/link",
+        "message": "Please import from `@/navigation` instead.",
+        "importNames": ["default"]
+      },
+      {
+        "name": "next/navigation",
+        "message": "Please import from `@/navigation` instead.",
+        "importNames": [
+          "redirect",
+          "permanentRedirect",
+          "useRouter",
+          "usePathname"
+        ]
+      }
+    ]
   }
 }
