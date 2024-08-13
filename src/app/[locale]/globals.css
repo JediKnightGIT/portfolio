@@ -19,4 +19,22 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
   }
+
+  /* .locale-option::before {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 20px;
+    height: 20px;
+
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/flag-en.svg');
+  } */
 }

@@ -25,6 +25,7 @@ const Resume: React.FC = () => {
   const ta = useTranslations('About');
   const te = useTranslations('Experience');
   const ted = useTranslations('Education');
+  const ts = useTranslations('Skills');
 
   // about data
   const about = {
@@ -143,10 +144,10 @@ const Resume: React.FC = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="experience">{te('value')}</TabsTrigger>
+            <TabsTrigger value="education">{ted('value')}</TabsTrigger>
+            <TabsTrigger value="skills">{ts('value')}</TabsTrigger>
+            <TabsTrigger value="about">{ta('title')}</TabsTrigger>
           </TabsList>
 
           {/* content */}

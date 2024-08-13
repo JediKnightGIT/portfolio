@@ -32,6 +32,7 @@
     }
   },
   "Experience": {
+    "value": "Experience",
     "title": "My experience",
     "list": {
       "1": {
@@ -47,6 +48,7 @@
     }
   },
   "Education": {
+    "value": "Education",
     "title": "My education",
     "list": {
       "1": {
@@ -58,5 +60,12 @@
         "degree": "Programming in computer systems"
       }
     }
+  },
+  "Skills": {
+    "value": "Skills"
+  },
+  "LocaleSwitcher": {
+    "label": "Toggle language",
+    "locale": "{locale, select, ru {Russian} en {English} other {Unknown}}"
   }
 }
