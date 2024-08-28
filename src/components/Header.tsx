@@ -1,9 +1,8 @@
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { Button } from './ui/button';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
-import LocaleSwitcher from './LocaleSwticher';
-import Image from 'next/image';
+import LocaleSwitcherSelect from './LocaleSwitcherSelect';
 
 // Components
 
@@ -18,7 +17,7 @@ const Header = () => {
           </h1>
         </Link>
         {/* Locale Switch */}
-        <LocaleSwitcher />
+        <LocaleSwitcherSelect />
         {/* desktop nav & hire me button */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />

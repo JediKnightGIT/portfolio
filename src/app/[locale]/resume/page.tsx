@@ -20,8 +20,12 @@ import {
 } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 import { useTranslations } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
+import { LocaleProps } from '../page';
 
-const Resume: React.FC = () => {
+const Resume = ({ params: { locale } }: LocaleProps) => {
+  unstable_setRequestLocale(locale);
+
   const ta = useTranslations('About');
   const te = useTranslations('Experience');
   const ted = useTranslations('Education');

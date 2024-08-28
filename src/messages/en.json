@@ -5,6 +5,9 @@
     "desc": "I focus at crafting elegant digital experiences that look good and built well under the hood.",
     "resume": "Download resume"
   },
+  "LocaleLayout": {
+    "title": "Front-end Developer Portfolio"
+  },
   "Stats": {
     "exp": "Years of experience",
     "projects": "Projects completed",

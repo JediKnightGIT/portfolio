@@ -1,8 +1,7 @@
 'use client';
 
-import { Link } from '@/navigation';
 // import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, Link } from '@/navigation';
 
 export const links = [
   {
@@ -34,8 +33,11 @@ const Nav = () => {
             href={link.path}
             key={idx}
             className={`${
-              link.path === pathname ? 'text-accent border-b-2 border-accent' : ''
-            } capitalize font-medium hover:text-accent transition-all`}>
+              link.path === pathname
+                ? 'text-accent border-b-2 border-accent'
+                : ''
+            } capitalize font-medium hover:text-accent transition-all`}
+          >
             {link.name}
           </Link>
         );
